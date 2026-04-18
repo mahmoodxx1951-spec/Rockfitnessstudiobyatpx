@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Fitness Studio | Premium Gym in Shivrampally, Hyderabad</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Rock Fitness Studio - Premier fitness center in Shivrampally, Hyderabad. 3D gym equipment, expert trainers, group classes, and personalized coaching.">
+    <meta name="keywords" content="gym Hyderabad, fitness studio Shivrampally, personal training, group classes, CrossFit, yoga">
+    <meta property="og:title" content="Rock Fitness Studio | Hyderabad">
+    <meta property="og:description" content="Transform your fitness journey at Rock Fitness Studio">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 3D Intro Animation -->
+    <div class="intro-3d" id="intro3d">
+        <div class="intro-container">
+            <div class="logo-3d">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#ff1744;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="100" cy="100" r="90" fill="url(#gradient1)" stroke="#fff" stroke-width="2"/>
+                    <text x="100" y="120" font-size="80" font-weight="bold" text-anchor="middle" fill="white" font-family="Playfair Display">R</text>
+                </svg>
+            </div>
+            <h1 class="intro-title">ROCK FITNESS STUDIO</h1>
+            <p class="intro-subtitle">Transform Your Body, Strengthen Your Mind</p>
+            <div class="intro-loader">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="22" fill="#ff6b35" stroke="#fff" stroke-width="1"/>
+                    <text x="25" y="32" font-size="20" font-weight="bold" text-anchor="middle" fill="white" font-family="Playfair Display">R</text>
+                </svg>
+                <span>ROCK FITNESS</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#trainers" class="nav-link">Trainers</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="cta-btn">JOIN NOW</button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Background -->
+    <section class="hero" id="home">
+        <canvas id="canvas3d"></canvas>
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-up">
+                <h1>UNLEASH YOUR POTENTIAL</h1>
+                <p>Experience world-class fitness facilities with expert trainers in Shivrampally, Hyderabad</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Start Your Journey</button>
+                    <button class="btn btn-secondary">Tour Studio</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>SCROLL TO EXPLORE</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section with 2D Scroll Animation -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content" data-scroll>
+                    <h2 class="section-title">About Rock Fitness Studio</h2>
+                    <p class="section-subtitle">Excellence in Fitness & Wellness</p>
+                    <p>
+                        Welcome to Rock Fitness Studio, Hyderabad's premier fitness destination located in the vibrant Shivrampally area. 
+                        Since our establishment, we've been transforming lives through state-of-the-art equipment, expert guidance, and 
+                        a supportive community of fitness enthusiasts.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat" data-scroll>
+                            <h3>5+</h3>
+                            <p>Years of Excellence</p>
+                        </div>
+                        <div class="stat" data-scroll>
+                            <h3>2000+</h3>
+                            <p>Happy Members</p>
+                        </div>
+                        <div class="stat" data-scroll>
+                            <h3>15+</h3>
+                            <p>Expert Trainers</p>
+                        </div>
+                        <div class="stat" data-scroll>
+                            <h3>50+</h3>
+                            <p>Classes Weekly</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-scroll>
+                    <div class="image-container">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ff6b35;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23ff1744;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='500' height='500' fill='url(%23grad1)' opacity='0.1'/%3E%3Ccircle cx='250' cy='250' r='200' fill='url(%23grad1)' opacity='0.3'/%3E%3Ctext x='250' y='280' font-size='100' font-weight='bold' text-anchor='middle' fill='%23ff6b35' font-family='Arial'%3EGym%3C/text%3E%3C/svg%3E" alt="Rock Fitness Studio">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title" data-scroll>OUR SERVICES</h2>
+            <p class="section-subtitle" data-scroll>Comprehensive fitness solutions tailored for you</p>
+            
+            <div class="services-grid">
+                <div class="service-card" data-scroll>
+                    <div class="service-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Strength Training</h3>
+                    <p>Build muscle and increase strength with our world-class equipment and expert guidance. From beginners to advanced athletes, we have programs for everyone.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Personalized workout plans</li>
+                        <li><i class="fas fa-check"></i> 1-on-1 coaching</li>
+                        <li><i class="fas fa-check"></i> Progressive training</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-scroll>
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Cardio & Conditioning</h3>
+                    <p>Improve your cardiovascular health and endurance with state-of-the-art cardio equipment and high-intensity training programs.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> HIIT training</li>
+                        <li><i class="fas fa-check"></i> Treadmills & cycles</li>
+                        <li><i class="fas fa-check"></i> StairMasters</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-scroll>
+                    <div class="service-icon">
+                        <i class="fas fa-yoga"></i>
+                    </div>
+                    <h3>Yoga & Flexibility</h3>
+                    <p>Enhance flexibility, reduce stress, and achieve mental peace through our comprehensive yoga and stretching programs.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Hatha Yoga</li>
+                        <li><i class="fas fa-check"></i> Power Yoga</li>
+                        <li><i class="fas fa-check"></i> Meditation</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-scroll>
+                    <div class="service-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Group Classes</h3>
+                    <p>Join our energetic group classes designed to motivate and inspire. From spinning to aerobics, dance to CrossFit.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Zumba</li>
+                        <li><i class="fas fa-check"></i> CrossFit</li>
+                        <li><i class="fas fa-check"></i> Spinning</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-scroll>
+                    <div class="service-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>Nutrition Guidance</h3>
+                    <p>Achieve your fitness goals faster with personalized nutrition plans from our certified nutritionists.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Customized diet plans</li>
+                        <li><i class="fas fa-check"></i> Supplement guidance</li>
+                        <li><i class="fas fa-check"></i> Regular monitoring</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-scroll>
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Recovery & Wellness</h3>
+                    <p>Speed up recovery and maintain peak performance with our modern recovery facilities and wellness services.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Steam & sauna</li>
+                        <li><i class="fas fa-check"></i> Massage therapy</li>
+                        <li><i class="fas fa-check"></i> Recovery tools</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Plans Section -->
+    <section class="memberships">
+        <div class="container">
+            <h2 class="section-title" data-scroll>MEMBERSHIP PLANS</h2>
+            <p class="section-subtitle" data-scroll>Choose the perfect plan for your fitness goals</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card" data-scroll>
+                    <div class="pricing-header">
+                        <h3>STARTER</h3>
+                        <p class="price">₹1,999<span>/month</span></p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Gym access (6 AM - 10 PM)</li>
+                        <li><i class="fas fa-check"></i> All equipment access</li>
+                        <li><i class="fas fa-times"></i> Group classes</li>
+                        <li><i class="fas fa-times"></i> Personal training</li>
+                        <li><i class="fas fa-times"></i> Nutrition consultation</li>
+                    </ul>
+                    <button class="btn btn-primary">Choose Plan</button>
+                </div>
+
+                <div class="pricing-card featured" data-scroll>
+                    <div class="badge">MOST POPULAR</div>
+                    <div class="pricing-header">
+                        <h3>PREMIUM</h3>
+                        <p class="price">₹3,999<span>/month</span></p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 24/7 gym access</li>
+                        <li><i class="fas fa-check"></i> All equipment access</li>
+                        <li><i class="fas fa-check"></i> Unlimited group classes</li>
+                        <li><i class="fas fa-check"></i> 4 personal training sessions</li>
+                        <li><i class="fas fa-check"></i> Nutrition consultation</li>
+                    </ul>
+                    <button class="btn btn-primary">Choose Plan</button>
+                </div>
+
+                <div class="pricing-card" data-scroll>
+                    <div class="pricing-header">
+                        <h3>ELITE</h3>
+                        <p class="price">₹6,999<span>/month</span></p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 24/7 gym access</li>
+                        <li><i class="fas fa-check"></i> All equipment access</li>
+                        <li><i class="fas fa-check"></i> Unlimited group classes</li>
+                        <li><i class="fas fa-check"></i> Unlimited personal training</li>
+                        <li><i class="fas fa-check"></i> Priority nutrition consultation</li>
+                    </ul>
+                    <button class="btn btn-primary">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section with 3D Effect -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title" data-scroll>FACILITY GALLERY</h2>
+            <p class="section-subtitle" data-scroll>State-of-the-art equipment and ambiance</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-scroll>
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#ff1744;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="400" height="300" fill="url(#g1)" opacity="0.2"/>
+                            <text x="200" y="150" font-size="24" text-anchor="middle" fill="#666" font-family="Arial">Strength Training Floor</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Strength Training Area</h3>
+                        <p>Full range of dumbbells, barbells, and strength machines</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-scroll>
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#0099ff;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="400" height="300" fill="url(#g2)" opacity="0.2"/>
+                            <text x="200" y="150" font-size="24" text-anchor="middle" fill="#666" font-family="Arial">Cardio Equipment</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Cardio Zone</h3>
+                        <p>Latest treadmills, ellipticals, and stationary bikes</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-scroll>
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#d946ef;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="400" height="300" fill="url(#g3)" opacity="0.2"/>
+                            <text x="200" y="150" font-size="24" text-anchor="middle" fill="#666" font-family="Arial">Group Classes Studio</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Group Classes Studio</h3>
+                        <p>Modern studio with professional sound and lighting</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-scroll>
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="400" height="300" fill="url(#g4)" opacity="0.2"/>
+                            <text x="200" y="150" font-size="24" text-anchor="middle" fill="#666" font-family="Arial">Yoga & Flexibility</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Yoga & Flexibility Area</h3>
+                        <p>Dedicated space for yoga, stretching, and meditation</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-scroll>
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="400" height="300" fill="url(#g5)" opacity="0.2"/>
+                            <text x="200" y="150" font-size="24" text-anchor="middle" fill="#666" font-family="Arial">Locker Rooms</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Premium Locker Rooms</h3>
+                        <p>Clean, secure, and well-maintained changing facilities</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-scroll>
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="g6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#be185d;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="400" height="300" fill="url(#g6)" opacity="0.2"/>
+                            <text x="200" y="150" font-size="24" text-anchor="middle" fill="#666" font-family="Arial">Recovery Center</text>
+                        </svg>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Recovery Center</h3>
+                        <p>Steam, sauna, and massage therapy facilities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section class="trainers" id="trainers">
+        <div class="container">
+            <h2 class="section-title" data-scroll>EXPERT TRAINERS</h2>
+            <p class="section-subtitle" data-scroll>Meet our certified and experienced fitness professionals</p>
+            
+            <div class="trainers-grid">
+                <div class="trainer-card" data-scroll>
+                    <div class="trainer-image">
+                        <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="trainer1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#ff1744;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="300" height="400" fill="url(#trainer1)" opacity="0.1"/>
+                            <circle cx="150" cy="100" r="60" fill="url(#trainer1)" opacity="0.3"/>
+                            <text x="150" y="250" font-size="20" text-anchor="middle" fill="#666" font-family="Arial">Trainer 1</text>
+                        </svg>
+                    </div>
+                    <h3>Rajesh Kumar</h3>
+                    <p class="trainer-specialty">Strength & Conditioning Coach</p>
+                    <p class="trainer-bio">10+ years experience, certified personal trainer with expertise in powerlifting and bodybuilding.</p>
+                    <div class="trainer-certs">
+                        <span>ISSA Certified</span>
+                        <span>CPR Certified</span>
+                    </div>
+                    <div class="trainer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="trainer-card" data-scroll>
+                    <div class="trainer-image">
+                        <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="trainer2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#0099ff;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="300" height="400" fill="url(#trainer2)" opacity="0.1"/>
+                            <circle cx="150" cy="100" r="60" fill="url(#trainer2)" opacity="0.3"/>
+                            <text x="150" y="250" font-size="20" text-anchor="middle" fill="#666" font-family="Arial">Trainer 2</text>
+                        </svg>
+                    </div>
+                    <h3>Priya Singh</h3>
+                    <p class="trainer-specialty">Yoga & Wellness Instructor</p>
+                    <p class="trainer-bio">Certified yoga instructor with 8 years experience in power yoga and meditation practices.</p>
+                    <div class="trainer-certs">
+                        <span>RYT 200</span>
+                        <span>Meditation Specialist</span>
+                    </div>
+                    <div class="trainer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="trainer-card" data-scroll>
+                    <div class="trainer-image">
+                        <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="trainer3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#d946ef;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="300" height="400" fill="url(#trainer3)" opacity="0.1"/>
+                            <circle cx="150" cy="100" r="60" fill="url(#trainer3)" opacity="0.3"/>
+                            <text x="150" y="250" font-size="20" text-anchor="middle" fill="#666" font-family="Arial">Trainer 3</text>
+                        </svg>
+                    </div>
+                    <h3>Amit Patel</h3>
+                    <p class="trainer-specialty">CrossFit & Group Fitness Coach</p>
+                    <p class="trainer-bio">Level 2 CrossFit coach with 9 years experience in high-intensity functional training.</p>
+                    <div class="trainer-certs">
+                        <span>CrossFit L2</span>
+                        <span>NASM-CES</span>
+                    </div>
+                    <div class="trainer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <div class="trainer-card" data-scroll>
+                    <div class="trainer-image">
+                        <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="trainer4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="300" height="400" fill="url(#trainer4)" opacity="0.1"/>
+                            <circle cx="150" cy="100" r="60" fill="url(#trainer4)" opacity="0.3"/>
+                            <text x="150" y="250" font-size="20" text-anchor="middle" fill="#666" font-family="Arial">Trainer 4</text>
+                        </svg>
+                    </div>
+                    <h3>Deepika Sharma</h3>
+                    <p class="trainer-specialty">Nutrition & Weight Management Specialist</p>
+                    <p class="trainer-bio">Certified nutritionist with expertise in customized diet plans and lifestyle coaching.</p>
+                    <div class="trainer-certs">
+                        <span>Certified Nutritionist</span>
+                        <span>Wellness Coach</span>
+                    </div>
+                    <div class="trainer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials & Reviews Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-scroll>MEMBER REVIEWS & SUCCESS STORIES</h2>
+            <p class="section-subtitle" data-scroll>Real stories from our amazing community</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-scroll>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Rock Fitness Studio changed my life! The trainers are incredibly supportive and the facilities are world-class. 
+                        In just 6 months, I've lost 15kg and feel stronger than ever. Highly recommended!"
+                    </p>
+                    <div class="testimonial-author">
+                        <h4>Ananya Verma</h4>
+                        <p>Member since 2023</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-scroll>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The group classes at Rock Fitness are amazing! The energy and motivation from both trainers and fellow members 
+                        make every session enjoyable. I look forward to coming to the gym every day."
+                    </p>
+                    <div class="testimonial-author">
+                        <h4>Rohan Desai</h4>
+                        <p>Member since 2022</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-scroll>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The personalized nutrition guidance I received was game-changing. Combined with the training programs, 
+                        I achieved my goal weight faster than I thought possible. Best investment in my health!"
+                    </p>
+                    <div class="testimonial-author">
+                        <h4>Priya Mathur</h4>
+                        <p>Member since 2023</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-scroll>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The yoga classes have transformed my flexibility and mental peace. The instructors are knowledgeable and 
+                        create a welcoming environment for beginners like me. Absolutely love it!"
+                    </p>
+                    <div class="testimonial-author">
+                        <h4>Vikram Singh</h4>
+                        <p>Member since 2024</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-scroll>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "As someone recovering from an injury, the personalized rehab program designed by the trainers was perfect. 
+                        They understood my limitations and helped me get back to full strength safely."
+                    </p>
+                    <div class="testimonial-author">
+                        <h4>Shreya Nair</h4>
+                        <p>Member since 2023</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-scroll>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The 24/7 access and state-of-the-art equipment make Rock Fitness the perfect gym for my schedule. 
+                        The community here is like a family. I've made amazing friends here too!"
+                    </p>
+                    <div class="testimonial-author">
+                        <h4>Aditya Kapoor</h4>
+                        <p>Member since 2022</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-stats">
+                <div class="review-stat" data-scroll>
+                    <h3>4.9/5</h3>
+                    <p>Average Rating</p>
+                    <div class="mini-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="review-stat" data-scroll>
+                    <h3>2000+</h3>
+                    <p>Happy Members</p>
+                </div>
+                <div class="review-stat" data-scroll>
+                    <h3>500+</h3>
+                    <p>5-Star Reviews</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Info Section -->
+    <section class="location-info">
+        <div class="container">
+            <h2 class="section-title" data-scroll>VISIT US TODAY</h2>
+            <p class="section-subtitle" data-scroll>Located in the heart of Shivrampally, Hyderabad</p>
+            
+            <div class="location-grid">
+                <div class="location-map" data-scroll>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.2089045238!2d78.5389!3d17.3667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91b0c0c0c0c1%3A0x0!2sShivrampally!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="location-details" data-scroll>
+                    <div class="info-box">
+                        <h3><i class="fas fa-map-marker-alt"></i> Address</h3>
+                        <p>123 Fitness Avenue, Shivrampally<br>Hyderabad, Telangana - 500070<br>India</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3><i class="fas fa-phone"></i> Contact</h3>
+                        <p>Phone: <a href="tel:+919876543210">+91 98765 43210</a><br>
+                           WhatsApp: <a href="https://wa.me/919876543210">+91 98765 43210</a><br>
+                           Email: <a href="mailto:info@rockfitness.com">info@rockfitness.com</a></p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3><i class="fas fa-clock"></i> Operating Hours</h3>
+                        <p>Monday - Sunday: 6:00 AM - 11:00 PM<br>
+                           24-Hour Access: Premium Members Only<br>
+                           Holidays: 10:00 AM - 8:00 PM</p>
+                    </div>
+
+                    <div class="info-box">
+                        <h3><i class="fas fa-wifi"></i> Amenities</h3>
+                        <p>✓ Free WiFi<br>
+                           ✓ Parking Available<br>
+                           ✓ Shower Facilities<br>
+                           ✓ Locker System</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content" data-scroll>
+            <h2>Ready to Transform Your Body?</h2>
+            <p>Join Rock Fitness Studio and be part of our amazing fitness community. Start your free trial today!</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary">FREE TRIAL</button>
+                <button class="btn btn-secondary">SCHEDULE DEMO</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>ROCK FITNESS STUDIO</h4>
+                    <p>Your ultimate destination for fitness excellence in Hyderabad. Transform your life with us.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#trainers">Trainers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>SERVICES</h4>
+                    <ul>
+                        <li><a href="#">Strength Training</a></li>
+                        <li><a href="#">Yoga Classes</a></li>
+                        <li><a href="#">Personal Training</a></li>
+                        <li><a href="#">Nutrition Planning</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>CONTACT INFO</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Shivrampally, Hyderabad</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> info@rockfitness.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rock Fitness Studio. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <button class="floating-btn" id="floatingBtn">
+        <i class="fas fa-whatsapp"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
